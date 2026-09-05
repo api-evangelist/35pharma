@@ -1,0 +1,131 @@
+generated: '2026-09-05'
+method: probed
+source: live GET of the named /.well-known/ + root discovery path list on every host this record knows
+note: >-
+  35Pharma publishes no API and no developer program, and serves no discovery
+  document on any probed path. Every path below returned a hard 404 from the
+  Cloudflare/Webflow origin. hit_count is 0, so NO WellKnown, SecurityTxt,
+  APICatalog or AgentCard pointer is emitted in apis.yml — this file records a
+  measured absence, not a served surface. The host set is the registrable domain
+  and www only: there are no API baseURL hosts, no OpenAPI servers[] hosts, and
+  no docs/console host, and the candidate subdomains api./developer./developers./
+  docs./portal./data./trust. all fail to resolve (curl exit code 6, no DNS).
+hit_count: 0
+path_echo_control: passed
+hosts:
+- host: https://35pharma.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+  - path: /openapi.json
+    status: 404
+    file: null
+  - path: /swagger.json
+    status: 404
+    file: null
+  - path: /api-docs
+    status: 404
+    file: null
+  - path: /.well-known/35pharma-negative-control-7f3ab91c.json
+    status: 404
+    file: null
+    control: negative
+- host: https://www.35pharma.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+  - path: /openapi.json
+    status: 404
+    file: null
+  - path: /swagger.json
+    status: 404
+    file: null
+  - path: /api-docs
+    status: 404
+    file: null
+  - path: /.well-known/35pharma-negative-control-7f3ab91c.json
+    status: 404
+    file: null
+    control: negative
+unresolved_hosts:
+- api.35pharma.com
+- developer.35pharma.com
+- developers.35pharma.com
+- docs.35pharma.com
+- portal.35pharma.com
+- data.35pharma.com
+- trust.35pharma.com

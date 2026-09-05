@@ -64,5 +64,33 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-35Pharma is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/35pharma
+35Pharma is a Canada-based, private, clinical-stage biopharmaceutical company headquartered in Montreal, Quebec, with a research hub in Boston, Massachusetts. It designs and develops next-generation protein-based therapeutics — multi-specific Activin x GDF ligand traps engineered against the TGF-beta superfamily — for pulmonary hypertension, heart failure, cardiometabolic disease and obesity. Its lead program, HS235, is a precision-engineered activin signalling inhibitor that has completed Phase I healthy-volunteer studies and is entering proof-of-principle trials in PAH and PH-HFpEF; a second program, HS370, targets heart failure and obesity. 35Pharma publishes no developer program, API, or machine-readable API artifacts of any kind — it is a therapeutics developer, not a software or data provider. On 25 February 2026 the company announced an agreement to be acquired by GSK plc.
+
+## Company
+
+- **Website** — https://www.35pharma.com/
+- **News & Publications** — https://www.35pharma.com/news
+- **Careers** — https://www.35pharma.com/careers
+- **Privacy Policy** — https://cdn.prod.website-files.com/679106f289641fbcc75092be/690117401d052d425a9a6c62_35Pharma_PrivacyPolicy_EN_FR.pdf
+- **Parent company** — GSK plc (acquisition announced 25 February 2026) — https://www.gsk.com
+
+## API surface
+
+**None found.** 35Pharma publishes no developer program, no API, and no machine-readable
+API artifact. The full contract-discovery pass (2026-09-05) probed `35pharma.com` and
+`www.35pharma.com` for OpenAPI/Swagger at the host root, `llms.txt`, `apis.json`/`apis.yml`,
+every named `/.well-known/` discovery document (security.txt, OIDC, OAuth AS/PR, api-catalog,
+ai-plugin, aauth-resource) and both A2A agent-card paths — all returned a hard 404, including
+a negative-control path that cannot exist, so the origin is not a catch-all. No `api.`,
+`developer.`, `developers.`, `docs.`, `portal.`, `data.` or `trust.` subdomain resolves, and
+there is no GitHub organization. The recorded absence lives in
+[`well-known/35pharma-well-known.yml`](well-known/35pharma-well-known.yml).
+
+Note on terminology: in this sector "API" means *active pharmaceutical ingredient*. 35Pharma
+appears in pharma API/CDMO prospect databases for that reason; it is unrelated to a software
+interface.
+
+## Artifacts
+
+- [`well-known/35pharma-well-known.yml`](well-known/35pharma-well-known.yml) — probed discovery surface (0 hits)
+- [`security/35pharma-domain-security.yml`](security/35pharma-domain-security.yml) — probed TLS/DNS posture (TLSv1.3, SPF + DMARC `p=reject`, no DNSSEC, no CAA, no HSTS)

@@ -1,17 +1,36 @@
 aid: 35pharma
 name: 35Pharma
-description: '35Pharma is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: '35Pharma is a Canada-based, private, clinical-stage biopharmaceutical
+  company headquartered in Montreal, Quebec, with a research hub in Boston, Massachusetts.
+  It designs and develops next-generation protein-based therapeutics — multi-specific
+  Activin x GDF ligand traps engineered against the TGF-beta superfamily — for pulmonary
+  hypertension, heart failure, cardiometabolic disease and obesity. Its lead program,
+  HS235, is a precision-engineered activin signalling inhibitor that has completed
+  Phase I healthy-volunteer studies and is entering proof-of-principle trials in PAH
+  and PH-HFpEF; a second program, HS370, targets heart failure and obesity. 35Pharma
+  publishes no developer program, API, or machine-readable API artifacts of any kind
+  — it is a therapeutics developer, not a software or data provider. On 25 February
+  2026 the company announced an agreement to be acquired by GSK plc.'
 url: https://raw.githubusercontent.com/api-evangelist/35pharma/refs/heads/main/apis.yml
+image: https://cdn.prod.website-files.com/679106f289641fbcc75092be/6920bf64870d13ff322aff0b_Open%20graph%20logo.jpg
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
+x-parent-company: gsk
 specificationVersion: '0.20'
 created: '2026-09-05'
 modified: '2026-09-05'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Biopharmaceutical
+- Drug Development
+- Clinical Trials
+- Life Sciences
+- Protein Engineering
+- Healthcare
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +39,39 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://equityzen.com/company/35pharma
+  url: https://www.35pharma.com/
+- type: PressReleases
+  url: https://www.35pharma.com/news
+- type: Careers
+  url: https://www.35pharma.com/careers
+- type: PrivacyPolicy
+  url: https://cdn.prod.website-files.com/679106f289641fbcc75092be/690117401d052d425a9a6c62_35Pharma_PrivacyPolicy_EN_FR.pdf
+- type: ParentCompany
+  url: https://www.gsk.com
+- type: DomainSecurity
+  url: security/35pharma-domain-security.yml
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    35Pharma is a clinical-stage biopharmaceutical company developing Activin x GDF
+    ligand-trap biologics (lead asset HS235); its entire public site is seven marketing
+    pages — technology, pipeline, about, careers, news, publications — with no developer
+    section, no API, and no machine-readable artifact on any probed path.
+  evidence:
+  - url: https://www.35pharma.com/sitemap.xml
+    status: 200
+  - url: https://www.35pharma.com/openapi.json
+    status: 404
+  - url: https://www.35pharma.com/llms.txt
+    status: 404
+  - url: https://www.35pharma.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.35pharma.com/apis.json
+    status: 404
+  checked: '2026-09-05'
