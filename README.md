@@ -66,31 +66,78 @@
 
 35Pharma is a Canada-based, private, clinical-stage biopharmaceutical company headquartered in Montreal, Quebec, with a research hub in Boston, Massachusetts. It designs and develops next-generation protein-based therapeutics — multi-specific Activin x GDF ligand traps engineered against the TGF-beta superfamily — for pulmonary hypertension, heart failure, cardiometabolic disease and obesity. Its lead program, HS235, is a precision-engineered activin signalling inhibitor that has completed Phase I healthy-volunteer studies and is entering proof-of-principle trials in PAH and PH-HFpEF; a second program, HS370, targets heart failure and obesity. 35Pharma publishes no developer program, API, or machine-readable API artifacts of any kind — it is a therapeutics developer, not a software or data provider. On 25 February 2026 the company announced an agreement to be acquired by GSK plc.
 
-## Company
+**Areas:** Company · Biotechnology · Pharmaceuticals · Biopharmaceutical · Drug Development · Clinical Trials · Life Sciences · Protein Engineering · Healthcare
 
-- **Website** — https://www.35pharma.com/
-- **News & Publications** — https://www.35pharma.com/news
-- **Careers** — https://www.35pharma.com/careers
-- **Privacy Policy** — https://cdn.prod.website-files.com/679106f289641fbcc75092be/690117401d052d425a9a6c62_35Pharma_PrivacyPolicy_EN_FR.pdf
-- **Parent company** — GSK plc (acquisition announced 25 February 2026) — https://www.gsk.com
+## 35Pharma on APIs.io
 
-## API surface
+Everything profiled for 35Pharma is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/35pharma/](https://apis.io/providers/35pharma/)** — or go straight to one of the APIs or properties below.
 
-**None found.** 35Pharma publishes no developer program, no API, and no machine-readable
-API artifact. The full contract-discovery pass (2026-09-05) probed `35pharma.com` and
-`www.35pharma.com` for OpenAPI/Swagger at the host root, `llms.txt`, `apis.json`/`apis.yml`,
-every named `/.well-known/` discovery document (security.txt, OIDC, OAuth AS/PR, api-catalog,
-ai-plugin, aauth-resource) and both A2A agent-card paths — all returned a hard 404, including
-a negative-control path that cannot exist, so the origin is not a catch-all. No `api.`,
-`developer.`, `developers.`, `docs.`, `portal.`, `data.` or `trust.` subdomain resolves, and
-there is no GitHub organization. The recorded absence lives in
-[`well-known/35pharma-well-known.yml`](well-known/35pharma-well-known.yml).
+### Published properties
 
-Note on terminology: in this sector "API" means *active pharmaceutical ingredient*. 35Pharma
-appears in pharma API/CDMO prospect databases for that reason; it is unrelated to a software
-interface.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Artifacts
+#### Security (1)
 
-- [`well-known/35pharma-well-known.yml`](well-known/35pharma-well-known.yml) — probed discovery surface (0 hits)
-- [`security/35pharma-domain-security.yml`](security/35pharma-domain-security.yml) — probed TLS/DNS posture (TLSv1.3, SPF + DMARC `p=reject`, no DNSSEC, no CAA, no HSTS)
+Authentication, trust centre, and vulnerability disclosure.
+
+- [35Pharma Domain Security](https://apis.io/security/35pharma/35pharma-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.35pharma.com/)
+- [Privacy policy](https://cdn.prod.website-files.com/679106f289641fbcc75092be/690117401d052d425a9a6c62_35Pharma_PrivacyPolicy_EN_FR.pdf)
+
+## API Evangelist rating
+
+**Kin Score 6.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 49.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 10.5 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 7.8** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/35pharma/](https://apis.io/providers/35pharma/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for 35Pharma: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/35pharma/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
